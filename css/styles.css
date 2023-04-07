@@ -1,0 +1,13 @@
+a:link{ color:#FF0000;}
+a:visited{color:#00FF00;}
+a:hover{color:#FF00FF; }
+a:active{ color:#0000FF;}
+div#hi1 h1{
+  color:brown;
+  text-align:center;
+  background-color: rgb(221, 173, 125);
+}
+div#hi2{
+  text-align: right;
+  background-color:rgb(226, 145, 63) ;
+}
