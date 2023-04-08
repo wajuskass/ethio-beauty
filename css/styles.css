@@ -1,20 +1,32 @@
-a:link{ color:#FF0000;}
-a:visited{color:#00FF00;}
-a:hover{color:#FF00FF; }
-a:active{ color:#0000FF;}
-div#hi1 h1{
-  color:brown;
-  text-align:center;
-  background-color: rgb(221, 173, 125);
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
-div#hi2{
-  text-align: right;
-  background-color:rgb(226, 145, 63) ;
+nav{
+  height: 80px;
+  background: rgb(240, 157, 49);
+}
+nav ul{
+  float: right;
+  margin-right: 25px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 15px;
+}
+nav ul li a{
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  text-transform: uppercase;
 }
 /*national*/
-body#na{
+div#nam{
   margin: 0;
-  margin-bottom: 25rem;
+  background: burlywood;
 }
 .grid{
   display: grid;
@@ -23,6 +35,8 @@ body#na{
 .img-wrapper{
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
+  padding: 20px;
 }
 .img-wrapper img{
   display: block;
@@ -53,4 +67,9 @@ body#na{
 .img-wrapper:hover img{
   filter: blur(3px);
   transform: scale(1.1);
+}
+footer {
+  height: 80px;
+  text-align: center;
+  border: rgb(99, 82, 59);
 }
