@@ -4,6 +4,29 @@
   list-style: none;
   text-decoration: none;
 }
+.in nav{
+  height: 80px;
+  background: rgb(240, 157, 49);
+}
+.in nav ul{
+  float: right;
+  margin-right: 25px;
+}
+.in nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 15px;
+}
+.in nav ul li a{
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.in nav ul li a:hover{
+  background-color: brown;
+  color: black;
+}
 nav{
   height: 80px;
   background: rgb(240, 157, 49);
@@ -23,162 +46,8 @@ nav ul li a{
   font-size: 18px;
   text-transform: uppercase;
 }
-/*national*/
-div#nam{
-  margin: 0;
-  background: burlywood;
+nav ul li a:hover{
+  background-color: brown;
+  color: black;
 }
-.grid{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-.img-wrapper{
-  position: relative;
-  overflow: hidden;
-  box-sizing: border-box;
-  padding: 20px;
-}
-.img-wrapper img{
-  display: block;
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  object-position: center;
-}
-.img-wrapper .content{
-  position: absolute;
-  inset: 0;
-  font-size: 2rem;
-  padding: 1rem;
-  background: rgba(255, 255, 255, .4);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.img-wrapper img, .img-wrapper .content{
-  transition: 200ms ease-in-out;
-}
-.img-wrapper .content{
-  opacity: 0;
-}
-.img-wrapper:hover .content{
-  opacity: 1;
-}
-.img-wrapper:hover img{
-  filter: blur(3px);
-  transform: scale(1.1);
-}
-footer {
-  height: 80px;
-  text-align: center;
-  border: rgb(99, 82, 59);
-}
-/*traditional*/
-body.tr{
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background:rgb(9, 9, 78) ;
-}
-.slider{
-  position: relative;
-  width: 40%;
-  overflow: hidden;
-}
-.images{
-  display: flex;
-  width: 100%;
-}
-.images img{
-  height: 400px;
-  width: 100%;
-  transition: all 0.15s ease;
-}
-.images input{
-  display: none;
-}
-.dots{
-  display: flex;
-  justify-content: center;
-  margin: 5px;
-}
-.dots label{
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  border: solid #fff 3px;
-  cursor: pointer;
-  transition: all 0.15s ease;
-  margin: 5px;
-}
-.dots label:hover{background: #fff;}
-#img1:checked ~ .m1{
-  margin-left: 0;
-}
-#img2:checked ~ .m2{
-  margin-left: -100%;
-}
-#img3:checked ~ .m3{
-  margin-left: -200%;
-}
-#img4:checked ~ .m4{
-  margin-left: -300%;
-}
-/*religious*/
-body.re{
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background:rgb(9, 9, 78) ;
-}
-.sliderntxt{
-  position: relative;
-  width: 40%;
-  overflow: hidden;
-}
-.imagescont{
-  display: flex;
-  width: 100%;
-}
-.imagescont .img-wrappers{
-  height: 400px;
-  width: 100%;
-  transition: all 0.15s ease;
-}
-.imagescont img{
-  height: 400px;
-  width: 100%;
-  transition: all 0.15s ease;
-}
-.imagescont input{
-  display: none;
-}
-.dotss{
-  display: flex;
-  justify-content: center;
-  margin: 5px;
-}
-.dotss label{
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  border: solid #fff 3px;
-  cursor: pointer;
-  transition: all 0.15s ease;
-  margin: 5px;
-}
-.dotss label:hover{background: #fff;}
-#img11:checked ~ #n0{
-  margin-left: 0;
-}
-#img21:checked ~ #n1{
-  margin-left: -100%;
-}
-#img31:checked ~ #n2{
-  margin-left: -200%;
-}
-#img41:checked ~ #n3{
-  margin-left: -300%;
-}
+
