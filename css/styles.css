@@ -220,7 +220,6 @@ body.in{
 }
 .cloth{
   background: #8ca75e;
-  height: 985px;
   margin: 0;
   top:80px;
   bottom: 100px;
@@ -266,63 +265,7 @@ body.in{
   transform: scale(1.1);
 }
 
-/*second*/
-.tr{
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background:rgb(9, 9, 78) ;
-}
-.slider{
-  position: relative;
-  width: 40%;
-  overflow: hidden;
-}
-.images{
-  display: flex;
-  width: 100%;
-}
-.images img{
-  height: 400px;
-  width: 100%;
-  transition: all 0.15s ease;
-}
-.images input{
-  display: none;
-}
-.dots{
-  display: flex;
-  justify-content: center;
-  margin: 5px;
-}
-.dots label{
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  border: solid #fff 3px;
-  cursor: pointer;
-  transition: all 0.15s ease;
-  margin: 5px;
-}
-.dots label:hover{background: #fff;}
-#img1:checked ~ .m1{
-  margin-left: 0;
-}
-#img2:checked ~ .m2{
-  margin-left: -100%;
-}
-#img3:checked ~ .m3{
-  margin-left: -200%;
-}
-#img4:checked ~ .m4{
-  margin-left: -300%;
-}
-
-
-
-
-
+/*accessories*/
 body.ac{ 
   background-color: rgb(164, 255, 225);
 }
@@ -509,6 +452,68 @@ label.acc:hover{
   transform: scale(0);
   position: absolute;
   transition: .0s;
+}
+/*hair*/
+body.ha{ 
+  background-color: rgb(164, 255, 225);
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.slider{
+  height: 500px;
+  width: 800px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.slides{
+  display: flex;
+  width: 500%;
+  height: 500px;
+}
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+.slides input{
+  display: none;
+}
+.slide img{
+  width: 800px;
+  height: 500px;
+}
+.dots{
+  width: 800px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin-top: -40px;
+}
+.manual-btn{
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  border: solid #fff 3px;
+  cursor: pointer;
+  transition: 1s;
+  padding: 5px;
+}
+.dots .manual-btn:hover{background: #fff;}
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+#img1:checked ~ .first{
+  margin-left: 0%;
+}
+#img2:checked ~ .first{
+  margin-left: -20%;
+}
+#img3:checked ~ .first{
+  margin-left: -40%;
+}
+#img4:checked ~ .first{
+  margin-left: -60%;
 }
 /*contact*/
 body.co{
