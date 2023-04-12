@@ -4,12 +4,13 @@
   list-style: none;
   text-decoration: none;
   overflow:hidden;
-  height: 180vh;
 }
 /*home page*/
 nav{
-  height: 13vh;
-  background: #556B2F;
+  height: 80px;
+  position: absolute;
+  width: 100%;
+  top: 0;
 }
 nav ul{
   float: right;
@@ -33,9 +34,9 @@ nav ul li a:hover{
 footer{
   position: absolute;
   width: 100%;
-  background: #556B2F;
+  text-align: center;
   color: white;
-  height: 17vh;
+  height: 100px;
   bottom: 0;
 }
 .body{
@@ -45,11 +46,11 @@ footer{
   overflow:hidden;
 }
 .banner1, .banner2,.banner3,.banner4{
-  height:150vh;
+  height: 657px;;
   width:100%;
   position: absolute;
   left: 0;
-  top: 80px;
+  top: 0;
   bottom: 200px;
 }
 .in img{
@@ -68,8 +69,8 @@ footer{
 .text-box{
   width:600px;
   position:relative;
-  top:10px;
-  left:10px;
+  top:200px;
+  left:100px;
   color:#fff;
   background: rgba(0, 0, 0, 0.1);
   animation: textup 12s linear infinite;
