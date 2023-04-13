@@ -207,19 +207,9 @@ body.in{
 .text-box4{
   animation-delay: 9s;
 }
-/*cloth page*/
-.na{
-  top: 0;
-  height: 80px;
-  background-color: #2f4f4f;
-}
-.foot{
-  bottom: 0;
-  height: 100px;
-  background-color: #2f4f4f;
-}
+/*jewellery*/
 .cloth{
-  background: #8ca75e;
+  background: rgb(97, 111, 126);
   margin: 0;
   top:80px;
   bottom: 100px;
@@ -265,13 +255,13 @@ body.in{
   transform: scale(1.1);
 }
 
-/*accessories*/
+/*cloth*/
 body.ac{ 
-  background-color: rgb(164, 255, 225);
+  background-color: rgb(125, 149, 173);
 }
 nav.n{
   height: 80px;
-  background-color: aqua;
+  background-color: rgb(123, 134, 145);
 }
 nav.n ul{
   float: right;
@@ -296,7 +286,7 @@ nav.n ul li a:hover{
   color: black;
 }
 footer.nf{
-  background-color: rgb(67, 207, 207);
+  background-color: rgb(123, 134, 145);
   bottom: 0;
   position: relative;
   width: 100%;
@@ -310,12 +300,6 @@ input.ia{
 .container{
   width: 100%;
   text-align: center;
-}
-h1{
-  font-weight: normal;
-  font-size: 35px;
-  position: relative;
-  margin: 40px 0;
 }
 .top-container{
   background-color: rgb(243, 243, 243);
@@ -369,14 +353,14 @@ label.acc:hover{
   border-radius: 10px;
   transition: .5s;
 }
-.family::before{
-  content: "famvjknbvbvcbcv";
+.cultural::before{
+  content: "This cloth reflect on the culture of the people";
 }
-.child::before{
-  content: "childnnvcvjvvvcb";
+.modern::before{
+  content: "This show the growth of modern fashion using our own fabric and identiy";
 }
-.place::before{
-  content: "placejnjfjnfkvj";
+.unique::before{
+  content: "This are the hidden gem of ethiopia who define beauty in a whole different way";
 }
 .pic::before{
   position: absolute;
@@ -417,37 +401,37 @@ label.acc:hover{
   position: relative;
   transition: .5s;
 }
-#check2:checked ~.container .photo-gallery .family{
+#check2:checked ~.container .photo-gallery .cultural{
   transform: scale(1);
   opacity: 1;
   position: relative;
 }
-#check2:checked ~.container .photo-gallery .child,
-#check2:checked ~.container .photo-gallery .place{
+#check2:checked ~.container .photo-gallery .modern,
+#check2:checked ~.container .photo-gallery .unique{
   opacity: 0;
   transform: scale(0);
   position: absolute;
   transition: .0s;
 }
-#check3:checked ~.container .photo-gallery .child{
+#check3:checked ~.container .photo-gallery .modern{
   opacity: 1;
   transform: scale(1);
   position: relative;
 }
-#check3:checked ~.container .photo-gallery .place,
-#check3:checked ~.container .photo-gallery .family{
+#check3:checked ~.container .photo-gallery .unique,
+#check3:checked ~.container .photo-gallery .cultural{
   opacity: 0;
   transform: scale(0);
   position: absolute;
   transition: .0s;
 }
-#check4:checked ~.container .photo-gallery .place{
+#check4:checked ~.container .photo-gallery .unique{
   opacity: 1;
   transform: scale(1);
   position: relative;
 }
-#check4:checked ~.container .photo-gallery .child,
-#check4:checked ~.container .photo-gallery .family{
+#check4:checked ~.container .photo-gallery .modern,
+#check4:checked ~.container .photo-gallery .cultural{
   opacity: 0;
   transform: scale(0);
   position: absolute;
@@ -455,7 +439,7 @@ label.acc:hover{
 }
 /*hair*/
 body.ha{ 
-  background-color: rgb(164, 255, 225);
+  background-color: rgb(117, 138, 158);
   font-size: 15px;
   justify-content: center;
   align-items: center;
@@ -517,7 +501,7 @@ body.ha{
 }
 /*contact*/
 body.co{
-  background: #8ca75e;
+  background: rgb(99, 119, 139);
 }
 .cont{
   width: 80%;
@@ -534,7 +518,7 @@ body.co{
 .contact-right{
   flex-basis: 40%;
   padding: 40px;
-  background: #2f4f4f;
+  background: rgb(26, 32, 39);
   color: #fff;
 }
 h1{
@@ -571,7 +555,7 @@ label.con{
   color: #2f4f4f;
 }
 button{
-  background: #2f4f4f;
+  background: #5c6868;
   width: 100px;
   outline: none;
   border: none;
@@ -581,7 +565,7 @@ button{
   margin-top: 20px;
 }
 .contact-left h4{
-  color: crimson;
+  color: rgb(78, 71, 71);
   font-weight: 600 ;
   margin-bottom: 30px;
 }
@@ -594,4 +578,5 @@ tr td:first-child{
 }
 tr td{
   padding-top: 20px;
+  color: #fff;
 }
